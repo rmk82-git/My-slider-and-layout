@@ -1,0 +1,1399 @@
+/* сбрасываем все стили из умолчания*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, p, blockquote, table, th, td, embed, object {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img, abbr {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em,
+h1, h2, h3, h4, h5, h6, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.0em;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+a, ins {
+    text-decoration: none;
+}
+
+/* создаем свои стили*/
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #000000;
+    margin: 0 auto;
+}
+
+.wraper {
+    background-image: url(../Images/phone_background1.png);
+    background-position: top right, top;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-left: 100px;
+
+}
+
+header {
+    display: flex;
+    padding-left: 85px;
+    align-items: center;
+
+}
+
+.header_container_left {
+    display: flex;
+    align-items: center;
+
+}
+
+h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 51px;
+    line-height: 62, 17px;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+}
+
+p {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    Line-height: 24, 52px;
+    color: #FFFFFF;
+}
+
+
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22.8px;
+    line-height: 27px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+h4 {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    vertical-align: top;
+    padding-bottom: 32.73px;
+}
+
+.loginLogo {
+    margin-left: 108px;
+    margin-right: 14px;
+
+}
+
+a {
+    font-family: Noto Sans;
+    color: #FFFFFF;
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+a:hover {
+    color: red;
+}
+
+.Image_phone {
+    width: 40%;
+}
+
+
+.Image_phone img {
+    width: 100%;
+    min-width: 161px;
+    min-height: 322.99px;
+
+}
+
+.background {
+    max-height: 0;
+
+}
+
+.flex_content {
+    display: flex;
+    justify-content: space-between;
+    max-width: max-content;
+
+}
+
+h1 {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+    margin-right: 48px;
+    padding-top: 243px;
+    max-width: 643px;
+
+}
+
+b {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 70px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.image_conteiner1 {
+    display: flex;
+    padding-top: 55px;
+    position: relative;
+    align-items: flex-end;
+}
+
+.content__image {
+    padding-right: 31px;
+
+
+}
+
+.image_conteiner1 ::before {
+    content: url(../Images/Ellipse\ 93.png);
+
+    position: absolute;
+    left: -100px;
+    top: -50px;
+
+}
+
+
+
+span {
+    font-family: Noto Sans;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-align: start;
+    margin-right: 15px;
+    max-width: 380px;
+}
+
+
+.download {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 55px;
+    ;
+}
+
+.download_text {
+    display: flex;
+    align-items: center;
+}
+
+.download_images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Google_desktop {
+    margin: 0 11px 0 28px;
+}
+
+
+.Appstore_mobile {
+    display: none;
+
+}
+
+.Google_mobile {
+    display: none;
+
+}
+
+
+.transition {
+    background-color: #212834;
+    display: flex;
+    padding: 36px 0px 38px 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 61px;
+
+}
+
+.transition_mobile {
+    display: none;
+}
+
+.trasition_text {
+    font-size: 14px;
+    line-height: 19px;
+    display: block;
+    text-align: left;
+
+}
+
+.transition_border {
+
+    margin-right: 24px;
+    width: 132px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid #FFFFFF;
+    border-radius: 6px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.border_conteiner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.border_content {
+    min-height: 312px;
+    width: 503px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 21.3671px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 0 73px 30px 55px;
+}
+
+.border_content_text1 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    padding-bottom: 30px;
+}
+
+
+
+
+.border_content_text2 {
+
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration-line: underline;
+    text-align: left;
+}
+
+.Phone2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.phone2_text_container {
+    width: 45%;
+    padding-top: 12%;
+    padding-right: 163px;
+    position: relative;
+
+
+}
+
+.phone2_text_container ::after {
+    content: url(../Images/Ellipse\ 94.png);
+    position: absolute;
+    left: 15%;
+    top: 15%;
+
+}
+
+
+.iphone_desktop {
+    max-width: 55%;
+}
+
+
+
+
+.iphone_mobile {
+    display: none;
+}
+
+.iphone img {
+    width: 100%;
+}
+
+.phone2_text_container {
+    width: 45%;
+}
+
+
+
+
+.a_dude_background {
+
+    background-position: top center, top center;
+    background-image: url(../Images/dude_background_shadow.png), url(../Images/louis-hansel-shotsoflouis-_6ZqQc02NYc-unsplash.png);
+    background-repeat: no-repeat;
+}
+
+.a_dude_phone1_mobile {
+    display: none;
+}
+
+.a_dude_phone2_mobile {
+    display: none;
+}
+
+.a_dude_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 1060px;
+    margin-bottom: 144px;
+
+}
+
+
+.a_dude_text {
+    padding-bottom: 74.15px;
+    max-width: 316px;
+}
+
+.a_dude_text_mobile {
+    display: none;
+
+}
+
+.diagrams_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 217px;
+}
+
+.diagrams_text {
+    max-width: 497px;
+}
+
+.dj_background {
+    margin-bottom: 41px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(../Images/dj_background.png), url(../Images/dj.png), url(../Images/coctail.png);
+    background-position: top left, top left, top right;
+    background-repeat: no-repeat;
+    background-size: cover, auto, auto;
+    flex-wrap: wrap;
+    height: 1230px;
+    position: relative;
+
+}
+
+
+.dj_text {
+    flex-grow: 0;
+    max-width: 480px;
+    padding-bottom: 427px;
+}
+
+.footer_images {
+    display: flex;
+    flex-direction: column;
+    padding-top: 23px;
+    align-items: flex-start;
+    padding-bottom: 250px;
+}
+
+
+.phone_coctail_center {
+    margin: 0 auto;
+    padding-bottom: 300px;
+    position: relative;
+
+}
+
+.dj_background ::after {
+    content: url(../Images/Nightlife.png);
+    position: absolute;
+    left: 88%;
+    top: -50px;
+
+}
+
+
+
+.phone_coctail_center_mobile {
+    display: none;
+}
+
+.phone_coctail_right {
+    margin-right: 56.44px;
+}
+
+.phone_coctail_right_mobile {
+    display: none;
+}
+
+.phone_Notab {
+    padding-bottom: 192px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../Images/NotabPhoneBackground.png), url(../Images/NOTAB1.png), url(../Images/NOTAB2.png), url(../Images/NOTAB3.png), url(../Images/NOTAB4.png);
+    background-position: center, top 255px left 0px, top 255px right, top 586px left, top 542px right;
+    background-repeat: no-repeat;
+}
+
+.Notab_phone {
+    position: relative;
+}
+
+.Notab_Phone_mobile {
+    display: none;
+}
+
+.Notab_content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Notab_arrow {
+    position: absolute;
+    top: 28%;
+    right: -30%;
+}
+
+.Notab_arrow_text {
+    position: absolute;
+    top: 40%;
+    right: -67%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: Left;
+    vertical-align: bottom;
+    position: absolute;
+    color: #FFFFFF;
+
+
+
+}
+
+
+.Notab_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-top: 80px;
+    flex-wrap: wrap-reverse;
+}
+
+.Notab_text_p {
+    max-width: 292px;
+}
+
+
+
+.Notab_text_h2 {
+    max-width: 381px;
+    padding-right: 50px;
+}
+
+.big_phone {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 160px;
+
+}
+
+
+.big_phone_img_desktop {
+    background-image: url(../Images/big_phone_background.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    justify-content: center;
+}
+
+.big_phone_img_mobile {
+    display: none;
+}
+
+
+.big_phone_img_conteiner {
+    position: relative;
+
+}
+
+.big_phone_border1 {
+    position: absolute;
+    top: 204px;
+    right: 126.22px;
+}
+
+.big_phone_border2 {
+    position: absolute;
+    top: 359px;
+    left: -24px;
+}
+
+.big_phone_border3 {
+    position: absolute;
+    top: 639px;
+    left: 695px;
+}
+
+.big_phone_border4 {
+    position: absolute;
+    top: 730px;
+    left: 198px;
+}
+
+.big_phone_text1 {
+    position: absolute;
+    top: 230px;
+    right: 149px;
+    width: 222px;
+
+}
+
+.big_phone_text2 {
+    position: absolute;
+    top: 395px;
+    left: 2px;
+    width: 233px;
+
+}
+
+.big_phone_text3 {
+    position: absolute;
+    top: 665px;
+    left: 718px;
+    width: 138px;
+
+}
+
+.big_phone_text4 {
+    position: absolute;
+    top: 752px;
+    left: 223px;
+    width: 125.41px;
+}
+
+.big_phone_conteiner {
+    margin: 0 auto;
+}
+
+
+
+.Notab_background {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Notab_background_phone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.Phone_screenshot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form_text {
+    max-width: 580px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto 82px;
+    position: relative;
+}
+
+.form_text::after {
+    content: url(../Images/Rectangle\ 1649.png);
+    position: absolute;
+    top: -300px;
+    left: -200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 91px;
+    position: relative;
+
+}
+
+form ::after {
+    content: url(../Images/form_background.png);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+input {
+    margin-bottom: 23px;
+}
+
+
+.Name {
+    width: 818px;
+    max-width: 100%;
+    height: 83px;
+    max-height: 100%;
+    padding: 29px 23px;
+    border-radius: 10px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    vertical-align: bottom;
+
+}
+
+.City {
+    width: 397px;
+    max-width: 100%;
+    height: 83px;
+    max-height: 100%;
+    padding: 29px 23px;
+    border-radius: 10px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+
+}
+
+textarea {
+    width: 818px;
+    max-width: 100%;
+    height: 199px;
+    max-height: 100%;
+    border-radius: 10px;
+    padding: 26px 23px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 60px;
+
+}
+
+.button {
+    width: 398px;
+    max-width: 100%;
+    height: 80px;
+    max-height: 100%;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    vertical-align: Bottom;
+    background-color: black;
+    color: #FFFFFF;
+
+
+
+}
+
+.Div_City {
+    width: 818px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h4 {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    line-height: 100%;
+    vertical-align: Top;
+    letter-spacing: 3%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.Big_google_apple {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+    flex-wrap: wrap;
+}
+
+.Apple_big {
+    margin-right: 59.07px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-left: 158px;
+    padding-right: 100px;
+
+    height: 131, 15px;
+    max-height: 100%;
+    padding-top: 99.36px;
+    background-image: url(../Images/Rectangle\ 1595.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 85.85px;
+    align-items: baseline;
+
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    opacity: .7;
+
+}
+
+.footer_down {
+    width: 171px;
+}
+
+
+h5 {
+    color: #FFFFFF;
+    font-family: Avenir;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: Right;
+    vertical-align: Top;
+    text-align: left;
+    margin: 10px auto 0 0;
+
+}
+
+h6 {
+    color: #FFFFFF;
+    font-family: Avenir;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: Right;
+    vertical-align: Top;
+    margin: 10px auto;
+
+}
+
+.error {
+    border: red solid 2px;
+}
+
+
+
+
+@media screen and (max-width: 1250px) {
+    .dj_background {
+        margin-bottom: 41px;
+        display: flex;
+        align-items: flex-end;
+        background-image: url(../Images/dj_background.png), url(../Images/dj.png), url(../Images/coctail.png);
+        background-position: top left, top left, top right;
+        background-repeat: no-repeat;
+        background-size: cover, auto, auto;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+
+    .dj_background ::after {
+        content: url(../Images/Nightlife.png);
+        position: absolute;
+        left: 88%;
+        top: -50px;
+
+    }
+
+
+    .phone_coctail_center {
+        margin: 50px auto 20px;
+        padding-bottom: 0;
+
+    }
+
+    .phone_coctail_right {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .wraper {
+        background-image: url(../Images/background_main_mobile.png);
+        background-position: top right, top;
+        background-repeat: no-repeat;
+        padding-bottom: 55px;
+
+    }
+
+    .content__image {
+        display: none;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 0 15px 0 15px;
+
+    }
+
+    .content1 {
+        width: 80%;
+    }
+
+    .Image_phone {
+        width: 20%;
+    }
+
+
+    .conteiner__content {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-right: 48px;
+        padding-top: 123px;
+        max-width: 643px;
+
+    }
+
+    .image_conteiner1 {
+        display: flex;
+        padding-top: 24px;
+    }
+
+    .image_conteiner1 ::before {
+        display: none;
+    }
+
+    .iphone_desktop img {
+        width: 100%;
+
+    }
+
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        align-items: center;
+        padding-top: 23px;
+        justify-content: space-between;
+
+    }
+
+    .header_Image {
+        width: 51.73px;
+    }
+
+    .headerLogo img {
+        width: 46.41px;
+    }
+
+    .loginLogo {
+        display: none;
+    }
+
+    a {
+        font-size: 14px;
+        line-height: 19.07px;
+        text-decoration: underline;
+
+    }
+
+    h1 {
+        font-size: 35px;
+        line-height: 40px;
+        padding-top: 75px;
+        margin-right: 0;
+
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 29.66px;
+
+    }
+
+    h3 {
+        font-size: 14px;
+        line-height: 16.41px
+    }
+
+
+    p {
+        font-size: 16px;
+        line-height: 21.79px;
+
+    }
+
+    .download {
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 70px;
+
+    }
+
+    b {
+        font-size: 24px;
+        line-height: 29.26px;
+        padding: 0 10px 34px 0;
+
+    }
+
+
+
+    .Appstore_desktop {
+        padding: 0 0px 24px 0;
+
+
+    }
+
+    .transition {
+        display: none;
+    }
+
+    .transition_mobile {
+        display: block;
+        background-color: #212834;
+        display: flex;
+        padding: 36px 15px 23px 15px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 61px;
+    }
+
+    .trasition_text {
+        font-size: 12px;
+        line-height: 16.34px;
+
+    }
+
+    .border_content {
+        padding-left: 33px;
+        padding-right: 54px;
+
+    }
+
+    .border_content_text1 {
+        font-size: 24px;
+        line-height: 33px;
+
+    }
+
+    .border_content_text2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .Phone2 {
+        padding-left: 15px;
+        justify-content: center;
+
+    }
+
+    .iphone_mobile {
+        display: block;
+        width: 50%;
+    }
+
+    .iphone_mobile img {
+        margin: 0 auto;
+    }
+
+
+    .iphone_desktop {
+        display: none;
+    }
+
+    .phone2_text_container {
+        width: 100%;
+        padding: 110px 45px 80px 15px;
+    }
+
+    .transition_border {
+
+        margin-right: 0;
+    }
+
+    .a_dude_background {
+        background: none;
+
+    }
+
+    .a_dude_text {
+        display: none;
+    }
+
+    .a_dude_text_mobile {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 400px;
+        margin: 0 auto;
+        background-position: top center, top center;
+        background-image: url(../Images/dude_background_mobile_shadow.png), url(../Images/dude_background_mobile.png);
+        background-repeat: no-repeat;
+
+    }
+
+    .a_dude_flex {
+        justify-content: center;
+        padding-bottom: 144.15px;
+        height: auto;
+    }
+
+
+    .a_dude_phone1 {
+        display: none;
+    }
+
+    .a_dude_phone1_mobile {
+        display: block;
+        margin: 70px auto 55px;
+    }
+
+    .a_dude_phone2 {
+        display: none;
+    }
+
+    .a_dude_phone2_mobile {
+        display: block;
+        margin: auto;
+    }
+
+
+    .diagrams_text {
+        padding-left: 15px;
+    }
+
+    .dj_background {
+        margin-bottom: 41px;
+        display: flex;
+        align-items: flex-end;
+        background-image: url(../Images/dj_shadow_mobile.png), url(../Images/Nightlife_mobile.png), url(../Images/dj_mobile.png), url(../Images/dj_coctail_mobile.png);
+        background-position: top, right 88% bottom 63%, top, right 35% bottom 66%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .dj_background ::after {
+        display: none;
+
+    }
+
+    .dj_text {
+        flex-grow: 0;
+        max-width: 480px;
+        padding-top: 266px;
+    }
+
+    .phone_coctail_center {
+        display: none;
+    }
+
+    .phone_coctail_center_mobile {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+
+    .phone_coctail_right {
+        display: none;
+    }
+
+    .phone_coctail_right_mobile {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .phone_Notab {
+        padding-bottom: 192px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(../Images/Notab_backgroud.mobile.png), url(../Images/NOTAB_1_mobile.png), url(../Images/NOTAB_2_mobile.png), url(../Images/NOTAB3_mobile.png), url(../Images/NOTAB4_mobile.png);
+        background-position: center, top 343px left 0px, top 341px right, top 420px left, top 411px right;
+        background-size: cover, auto, auto, auto, auto;
+        background-repeat: no-repeat;
+    }
+
+    .Notab_Phone_mobile {
+        display: block;
+    }
+
+    .Notab_Phone_desktop {
+        display: none;
+    }
+
+
+    .Notab_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding-top: 80px;
+        flex-wrap: wrap-reverse;
+        padding-bottom: 70px;
+    }
+
+    .Notab_arrow {
+        position: absolute;
+        top: 90%;
+        right: -37%;
+        transform: rotate(30deg);
+
+    }
+
+    .Notab_arrow_text {
+        top: 118%;
+        right: -35%;
+    }
+
+    .big_phone_img_desktop {
+        display: none;
+    }
+
+    .big_phone_img_mobile {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 95px;
+        align-items: center;
+        padding-top: 145px;
+
+    }
+
+    .big_phone {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .first_mobile_border {
+
+        position: absolute;
+        left: 39px;
+        top: -70px;
+    }
+
+    .first_mobile_border_text {
+        position: absolute;
+        left: 54px;
+        top: -57px;
+    }
+
+    .big_phone_img_conteiner_mobile {
+        position: relative;
+    }
+
+    .big_phone_border1_mobile {
+        position: absolute;
+        left: 196px;
+        top: 19px;
+    }
+
+    .big_phone_text1_mobile {
+        position: absolute;
+        left: 214px;
+        top: 34px;
+        width: 136px;
+    }
+
+    .big_phone_border2_mobile {
+        position: absolute;
+        left: 37px;
+        top: 341px;
+    }
+
+    .big_phone_text2_mobile {
+        position: absolute;
+        left: 52px;
+        top: 355px;
+    }
+
+    .big_phone_border3_mobile {
+        position: absolute;
+        left: 245px;
+        top: 424px;
+    }
+
+    .big_phone_text3_mobile {
+        position: absolute;
+        left: 257px;
+        top: 435px;
+        width: 85px;
+    }
+
+    .Notab_background {
+        display: none;
+    }
+
+    footer {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    .Apple_big {
+        padding-bottom: 24px;
+    }
+
+
+}
+
+@media screen and (max-width: 540px) {
+    .Apple_big {
+        margin: auto;
+
+    }
+
+
+
+
+    .footer_images {
+        justify-content: center;
+    }
+
+    h6 {
+        font-family: Avenir;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding-bottom: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .Google_desktop {
+        margin: auto;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .Notab_footer {
+        margin: auto;
+        padding-bottom: 17px;
+    }
+
+    .footer_text {
+        opacity: 1.0;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+
+
+
+
+}
